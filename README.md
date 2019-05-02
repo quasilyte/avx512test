@@ -61,3 +61,7 @@ avx512_4vnniw.s  avx512er.s     avx512_vbmi.s
 avx512_bitalg.s  avx512f.s      avx512_vnni.s
 avx512bw.s       avx512_ifma.s  avx512_vpopcntdq.s
 ```
+
+## How does it work
+
+TODO: describe how does avx512test works.
