@@ -42,8 +42,13 @@ make sure that relevant shared library can be loaded.
 If everything is OK, single command is enough to generate everything:
 
 ```sh
-$ cd $(go env GOPATH)/github.com/quasilyte/avx512test
-$ go run ./cmd/avx512test/main.go
+export GOPATH=$(go env GOPATH)
+
+cd $GOPATH/github.com/quasilyte/avx512test
+
+go install ./cmd/avx512test/main.go
+
+$GOPATH/bin/avx512test
 ```
 
 By default, it expects to find `x86.csv` inside current directory.
